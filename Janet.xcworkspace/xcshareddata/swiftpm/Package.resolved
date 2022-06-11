@@ -1,0 +1,23 @@
+{
+  "pins" : [
+    {
+      "identity" : "runestone",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/simonbs/Runestone",
+      "state" : {
+        "revision" : "2cb46f942488629a991a8f26213f18a8f6d4ccdd",
+        "version" : "0.1.1"
+      }
+    },
+    {
+      "identity" : "treesitterlanguages",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/simonbs/treesitterlanguages",
+      "state" : {
+        "revision" : "01a6f0ef732edd10672dc79fea1937b509b041eb",
+        "version" : "0.1.0"
+      }
+    }
+  ],
+  "version" : 2
+}

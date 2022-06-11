@@ -1,0 +1,16 @@
+//
+//  janet.modulemap
+//  JanetBridge
+//
+//  Created by Omar Estrella on 6/9/22.
+//
+
+framework module JanetBridge {
+  umbrella header "JanetBridge.h"
+
+  explicit module Janet {
+    private header "janet.h"
+  }
+
+  export *
+}
