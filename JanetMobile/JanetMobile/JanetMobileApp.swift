@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct JanetMobileApp: App {
+  @StateObject var appModel = Store()
+
   var body: some Scene {
     WindowGroup {
-      ContentView().environment(\.colorScheme, .dark)
+      MainView()
+        .environmentObject(appModel)
     }
   }
 }

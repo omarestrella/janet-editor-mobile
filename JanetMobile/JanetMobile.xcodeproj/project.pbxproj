@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6670BB4D2852B736001ADAE9 /* JanetMobileApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6670BB4C2852B736001ADAE9 /* JanetMobileApp.swift */; };
-		6670BB4F2852B736001ADAE9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6670BB4E2852B736001ADAE9 /* ContentView.swift */; };
+		6670BB4F2852B736001ADAE9 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6670BB4E2852B736001ADAE9 /* MainView.swift */; };
 		6670BB512852B737001ADAE9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6670BB502852B737001ADAE9 /* Assets.xcassets */; };
 		6670BB542852B737001ADAE9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6670BB532852B737001ADAE9 /* Preview Assets.xcassets */; };
 		6670BB5E2852B737001ADAE9 /* JanetMobileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6670BB5D2852B737001ADAE9 /* JanetMobileTests.swift */; };
@@ -39,6 +39,11 @@
 		6670BBED28544F79001ADAE9 /* locals.scm in Resources */ = {isa = PBXBuildFile; fileRef = 6670BBE528544886001ADAE9 /* locals.scm */; };
 		6670BBF028545193001ADAE9 /* TomorrowTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6670BBEE28545193001ADAE9 /* TomorrowTheme.swift */; };
 		6670BBF128545193001ADAE9 /* TomorrowNightTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6670BBEF28545193001ADAE9 /* TomorrowNightTheme.swift */; };
+		6670BBF72856821A001ADAE9 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6670BBF62856821A001ADAE9 /* Color.swift */; };
+		6670BBFA28568D35001ADAE9 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6670BBF928568D35001ADAE9 /* Store.swift */; };
+		6670BBFF2856B849001ADAE9 /* FileListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6670BBFE2856B849001ADAE9 /* FileListView.swift */; };
+		6670BC012856B943001ADAE9 /* FileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6670BC002856B943001ADAE9 /* FileManager.swift */; };
+		6670BC042856BB60001ADAE9 /* Disk in Frameworks */ = {isa = PBXBuildFile; productRef = 6670BC032856BB60001ADAE9 /* Disk */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,7 +80,7 @@
 /* Begin PBXFileReference section */
 		6670BB492852B736001ADAE9 /* JanetMobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JanetMobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6670BB4C2852B736001ADAE9 /* JanetMobileApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JanetMobileApp.swift; sourceTree = "<group>"; };
-		6670BB4E2852B736001ADAE9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		6670BB4E2852B736001ADAE9 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		6670BB502852B737001ADAE9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6670BB532852B737001ADAE9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		6670BB592852B737001ADAE9 /* JanetMobileTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JanetMobileTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -102,6 +107,12 @@
 		6670BBEB28544B9F001ADAE9 /* public.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = public.h; sourceTree = "<group>"; };
 		6670BBEE28545193001ADAE9 /* TomorrowTheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TomorrowTheme.swift; sourceTree = "<group>"; };
 		6670BBEF28545193001ADAE9 /* TomorrowNightTheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TomorrowNightTheme.swift; sourceTree = "<group>"; };
+		6670BBF22854D463001ADAE9 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		6670BBF62856821A001ADAE9 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		6670BBF928568D35001ADAE9 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		6670BBFD2856B60B001ADAE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		6670BBFE2856B849001ADAE9 /* FileListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileListView.swift; sourceTree = "<group>"; };
+		6670BC002856B943001ADAE9 /* FileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +123,7 @@
 				6670BBD428544625001ADAE9 /* TreeSitterLanguagesCommon in Frameworks */,
 				6670BBCA285445DA001ADAE9 /* TreeSitterJSONQueries in Frameworks */,
 				6670BBB22852CE64001ADAE9 /* Runestone in Frameworks */,
+				6670BC042856BB60001ADAE9 /* Disk in Frameworks */,
 				6670BBC4285445DA001ADAE9 /* TreeSitterJSON5 in Frameworks */,
 				6670BBC6285445DA001ADAE9 /* TreeSitterJSON5Queries in Frameworks */,
 				6670BBC2285445DA001ADAE9 /* TreeSitterJSON in Frameworks */,
@@ -163,10 +175,13 @@
 		6670BB4B2852B736001ADAE9 /* JanetMobile */ = {
 			isa = PBXGroup;
 			children = (
+				6670BBFD2856B60B001ADAE9 /* Info.plist */,
 				6670BBB62854431C001ADAE9 /* Editor */,
+				6670BBF828568ADD001ADAE9 /* Data */,
+				6670BBF52856820B001ADAE9 /* ViewModifiers */,
 				6670BBB32852CF0B001ADAE9 /* Views */,
 				6670BB4C2852B736001ADAE9 /* JanetMobileApp.swift */,
-				6670BB4E2852B736001ADAE9 /* ContentView.swift */,
+				6670BB4E2852B736001ADAE9 /* MainView.swift */,
 				6670BB502852B737001ADAE9 /* Assets.xcassets */,
 				6670BB522852B737001ADAE9 /* Preview Content */,
 			);
@@ -209,7 +224,7 @@
 		6670BBB32852CF0B001ADAE9 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				6670BBB42852CF1D001ADAE9 /* EditorView.swift */,
+				6670BBFE2856B849001ADAE9 /* FileListView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -217,9 +232,11 @@
 		6670BBB62854431C001ADAE9 /* Editor */ = {
 			isa = PBXGroup;
 			children = (
+				6670BBF32854D4C0001ADAE9 /* Views */,
 				6670BBD528544655001ADAE9 /* Languages */,
 				6670BBB728544322001ADAE9 /* Themes */,
 				6670BBBA28544364001ADAE9 /* HighlightName.swift */,
+				6670BBF22854D463001ADAE9 /* README.md */,
 			);
 			path = Editor;
 			sourceTree = "<group>";
@@ -230,8 +247,8 @@
 				6670BBEF28545193001ADAE9 /* TomorrowNightTheme.swift */,
 				6670BBEE28545193001ADAE9 /* TomorrowTheme.swift */,
 				6670BBB82854432F001ADAE9 /* OneDarkTheme.swift */,
-				6670BBBC285443B7001ADAE9 /* Base.swift */,
 				6670BBBE285444A1001ADAE9 /* PlainTextTheme.swift */,
+				6670BBBC285443B7001ADAE9 /* Base.swift */,
 			);
 			path = Themes;
 			sourceTree = "<group>";
@@ -286,6 +303,31 @@
 			path = queries;
 			sourceTree = "<group>";
 		};
+		6670BBF32854D4C0001ADAE9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6670BBB42852CF1D001ADAE9 /* EditorView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6670BBF52856820B001ADAE9 /* ViewModifiers */ = {
+			isa = PBXGroup;
+			children = (
+				6670BBF62856821A001ADAE9 /* Color.swift */,
+			);
+			path = ViewModifiers;
+			sourceTree = "<group>";
+		};
+		6670BBF828568ADD001ADAE9 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				6670BBF928568D35001ADAE9 /* Store.swift */,
+				6670BC002856B943001ADAE9 /* FileManager.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -313,6 +355,7 @@
 				6670BBCB285445DA001ADAE9 /* TreeSitterJSONRunestone */,
 				6670BBCF285445DA001ADAE9 /* TreeSitterMarkdownQueries */,
 				6670BBD328544625001ADAE9 /* TreeSitterLanguagesCommon */,
+				6670BC032856BB60001ADAE9 /* Disk */,
 			);
 			productName = JanetMobile;
 			productReference = 6670BB492852B736001ADAE9 /* JanetMobile.app */;
@@ -390,6 +433,7 @@
 			packageReferences = (
 				6670BBB02852CE64001ADAE9 /* XCRemoteSwiftPackageReference "Runestone" */,
 				6670BBC0285445DA001ADAE9 /* XCRemoteSwiftPackageReference "treesitterlanguages" */,
+				6670BC022856BB60001ADAE9 /* XCRemoteSwiftPackageReference "Disk" */,
 			);
 			productRefGroup = 6670BB4A2852B736001ADAE9 /* Products */;
 			projectDirPath = "";
@@ -441,12 +485,16 @@
 				6670BBBD285443B7001ADAE9 /* Base.swift in Sources */,
 				6670BBF028545193001ADAE9 /* TomorrowTheme.swift in Sources */,
 				6670BBDF285447AF001ADAE9 /* scanner.c in Sources */,
+				6670BBF72856821A001ADAE9 /* Color.swift in Sources */,
 				6670BBBF285444A1001ADAE9 /* PlainTextTheme.swift in Sources */,
 				6670BBF128545193001ADAE9 /* TomorrowNightTheme.swift in Sources */,
+				6670BC012856B943001ADAE9 /* FileManager.swift in Sources */,
+				6670BBFA28568D35001ADAE9 /* Store.swift in Sources */,
 				6670BBB92854432F001ADAE9 /* OneDarkTheme.swift in Sources */,
 				6670BBB52852CF1D001ADAE9 /* EditorView.swift in Sources */,
 				6670BBBB28544364001ADAE9 /* HighlightName.swift in Sources */,
-				6670BB4F2852B736001ADAE9 /* ContentView.swift in Sources */,
+				6670BBFF2856B849001ADAE9 /* FileListView.swift in Sources */,
+				6670BB4F2852B736001ADAE9 /* MainView.swift in Sources */,
 				6670BBDB28544757001ADAE9 /* parser.c in Sources */,
 				6670BB4D2852B736001ADAE9 /* JanetMobileApp.swift in Sources */,
 			);
@@ -611,11 +659,14 @@
 				DEVELOPMENT_TEAM = 5P2L88KTNE;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = JanetMobile/Info.plist;
+				INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportsDocumentBrowser = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -643,11 +694,14 @@
 				DEVELOPMENT_TEAM = 5P2L88KTNE;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = JanetMobile/Info.plist;
+				INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportsDocumentBrowser = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -796,6 +850,14 @@
 				minimumVersion = 0.1.0;
 			};
 		};
+		6670BC022856BB60001ADAE9 /* XCRemoteSwiftPackageReference "Disk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/saoudrizwan/Disk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.6.4;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -843,6 +905,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 6670BBC0285445DA001ADAE9 /* XCRemoteSwiftPackageReference "treesitterlanguages" */;
 			productName = TreeSitterLanguagesCommon;
+		};
+		6670BC032856BB60001ADAE9 /* Disk */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6670BC022856BB60001ADAE9 /* XCRemoteSwiftPackageReference "Disk" */;
+			productName = Disk;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
