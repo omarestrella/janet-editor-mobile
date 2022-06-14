@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		66324FB52858151D0063A5AF /* EditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66324FB42858151D0063A5AF /* EditorView.swift */; };
 		6670BB4D2852B736001ADAE9 /* JanetMobileApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6670BB4C2852B736001ADAE9 /* JanetMobileApp.swift */; };
 		6670BB4F2852B736001ADAE9 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6670BB4E2852B736001ADAE9 /* MainView.swift */; };
 		6670BB512852B737001ADAE9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6670BB502852B737001ADAE9 /* Assets.xcassets */; };
@@ -17,7 +18,7 @@
 		6670BB9E2852B7DC001ADAE9 /* JanetBridge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6670BB9D2852B7DC001ADAE9 /* JanetBridge.framework */; };
 		6670BB9F2852B7DC001ADAE9 /* JanetBridge.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6670BB9D2852B7DC001ADAE9 /* JanetBridge.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		6670BBB22852CE64001ADAE9 /* Runestone in Frameworks */ = {isa = PBXBuildFile; productRef = 6670BBB12852CE64001ADAE9 /* Runestone */; };
-		6670BBB52852CF1D001ADAE9 /* EditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6670BBB42852CF1D001ADAE9 /* EditorView.swift */; };
+		6670BBB52852CF1D001ADAE9 /* FileEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6670BBB42852CF1D001ADAE9 /* FileEditor.swift */; };
 		6670BBB92854432F001ADAE9 /* OneDarkTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6670BBB82854432F001ADAE9 /* OneDarkTheme.swift */; };
 		6670BBBB28544364001ADAE9 /* HighlightName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6670BBBA28544364001ADAE9 /* HighlightName.swift */; };
 		6670BBBD285443B7001ADAE9 /* Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6670BBBC285443B7001ADAE9 /* Base.swift */; };
@@ -78,6 +79,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		66324FB42858151D0063A5AF /* EditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorView.swift; sourceTree = "<group>"; };
 		6670BB492852B736001ADAE9 /* JanetMobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JanetMobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6670BB4C2852B736001ADAE9 /* JanetMobileApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JanetMobileApp.swift; sourceTree = "<group>"; };
 		6670BB4E2852B736001ADAE9 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -89,7 +91,7 @@
 		6670BB672852B737001ADAE9 /* JanetMobileUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JanetMobileUITests.swift; sourceTree = "<group>"; };
 		6670BB692852B737001ADAE9 /* JanetMobileUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JanetMobileUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		6670BB9D2852B7DC001ADAE9 /* JanetBridge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = JanetBridge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6670BBB42852CF1D001ADAE9 /* EditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorView.swift; sourceTree = "<group>"; };
+		6670BBB42852CF1D001ADAE9 /* FileEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileEditor.swift; sourceTree = "<group>"; };
 		6670BBB82854432F001ADAE9 /* OneDarkTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneDarkTheme.swift; sourceTree = "<group>"; };
 		6670BBBA28544364001ADAE9 /* HighlightName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighlightName.swift; sourceTree = "<group>"; };
 		6670BBBC285443B7001ADAE9 /* Base.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Base.swift; sourceTree = "<group>"; };
@@ -225,6 +227,7 @@
 			isa = PBXGroup;
 			children = (
 				6670BBFE2856B849001ADAE9 /* FileListView.swift */,
+				66324FB42858151D0063A5AF /* EditorView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -306,7 +309,7 @@
 		6670BBF32854D4C0001ADAE9 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				6670BBB42852CF1D001ADAE9 /* EditorView.swift */,
+				6670BBB42852CF1D001ADAE9 /* FileEditor.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -491,12 +494,13 @@
 				6670BC012856B943001ADAE9 /* FileManager.swift in Sources */,
 				6670BBFA28568D35001ADAE9 /* Store.swift in Sources */,
 				6670BBB92854432F001ADAE9 /* OneDarkTheme.swift in Sources */,
-				6670BBB52852CF1D001ADAE9 /* EditorView.swift in Sources */,
+				6670BBB52852CF1D001ADAE9 /* FileEditor.swift in Sources */,
 				6670BBBB28544364001ADAE9 /* HighlightName.swift in Sources */,
 				6670BBFF2856B849001ADAE9 /* FileListView.swift in Sources */,
 				6670BB4F2852B736001ADAE9 /* MainView.swift in Sources */,
 				6670BBDB28544757001ADAE9 /* parser.c in Sources */,
 				6670BB4D2852B736001ADAE9 /* JanetMobileApp.swift in Sources */,
+				66324FB52858151D0063A5AF /* EditorView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

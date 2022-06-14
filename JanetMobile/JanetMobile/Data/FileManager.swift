@@ -8,12 +8,16 @@
 import Disk
 import Foundation
 
-struct File {
+struct File: Identifiable, Hashable {
   var url: URL
   var contents: String
   
   var name: String {
     return url.lastPathComponent
+  }
+  
+  var id: String {
+    url.absoluteString
   }
 }
 
@@ -38,19 +42,5 @@ struct FileManager {
       return File(url: fileURL, contents: contents)
     }
     return files
-  }
-}
-
-extension Store {
-  func createFile(_ contents: String, filename: String) {
-    do {
-      try fileManager.createFile(contents, filename: filename)
-    } catch {
-      print(error)
-    }
-  }
-
-  func getFiles() -> [File] {
-    fileManager.getFiles()
   }
 }

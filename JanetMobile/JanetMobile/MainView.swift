@@ -12,33 +12,18 @@ struct MainView: View {
   @EnvironmentObject var store: Store
 
   var body: some View {
-    NavigationSplitView(columnVisibility: $store.activeColumn, sidebar: {
-      VStack {
-        Spacer()
-
-        Text("Projects..")
-
-        Spacer()
-      }
-    }, content: {
+    NavigationSplitView {
       FileListView()
         .navigationTitle("Files")
-        .toolbar(content: {
-          ToolbarItem(placement: .primaryAction, content: {
-            Button(action: {
-              store.createFile("asdf", filename: "test.txt")
-            }, label: {
-              Label("Add file", systemImage: "plus")
-            })
-          })
-        })
-    }, detail: {
-      VStack {
-        Spacer()
-        Text("Editor...")
-        Spacer()
+    } detail: {
+      ZStack {
+        if let file = store.activeFile {
+          EditorView(file: file)
+        } else {
+          Text("Select a file...")
+        }
       }
-    }).navigationSplitViewColumnWidth(min: 150, ideal: 150, max: 150)
+    }.navigationSplitViewColumnWidth(min: 150, ideal: 150, max: 150)
   }
 }
 

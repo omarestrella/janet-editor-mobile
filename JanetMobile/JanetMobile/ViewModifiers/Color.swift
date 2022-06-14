@@ -16,6 +16,6 @@ struct BackgroundColorStyle: ViewModifier {
 
 struct ForegroundColorStyle: ViewModifier {
   func body(content: Content) -> some View {
-    content.background(Color(uiColor: UIColor(named: "TomorrowNightForeground")!))
+    content.foregroundColor(Color(uiColor: UIColor(named: "TomorrowNightForeground")!))
   }
 }

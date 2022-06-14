@@ -9,7 +9,7 @@ import Foundation
 import SwiftUI
 
 class Store: ObservableObject {
-  @State var activeColumn: NavigationSplitViewVisibility = .doubleColumn
+  @Published var activeColumn: NavigationSplitViewVisibility = .doubleColumn
   
   internal let fileManager = FileManager()
   
@@ -19,5 +19,21 @@ class Store: ObservableObject {
   
   func toggleEditorFullscreen() {
     activeColumn = .doubleColumn
+  }
+  
+  // MARK: File management
+  
+  @Published var activeFile: File?
+  
+  func createFile(_ contents: String, filename: String) {
+    do {
+      try fileManager.createFile(contents, filename: filename)
+    } catch {
+      print(error)
+    }
+  }
+
+  func getFiles() -> [File] {
+    fileManager.getFiles()
   }
 }

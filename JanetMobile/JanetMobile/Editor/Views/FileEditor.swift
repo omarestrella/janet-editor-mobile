@@ -9,7 +9,7 @@ import JanetBridge
 import Runestone
 import SwiftUI
 
-struct EditorView: UIViewRepresentable {
+struct FileEditor: UIViewRepresentable {
   let theme = TomorrowNightTheme()
   let state: TextViewState
 
@@ -54,14 +54,14 @@ struct EditorView: UIViewRepresentable {
     return textView
   }
 
-  func updateUIView(_: TextView, context _: Context) {
-    print("got update")
+  func updateUIView(_ textView: TextView, context: Context) {
+    textView.text = self.text
   }
 
   final class TextViewCoordinator: NSObject, TextViewDelegate {
-    let parent: EditorView
+    let parent: FileEditor
 
-    init(_ parent: EditorView) {
+    init(_ parent: FileEditor) {
       self.parent = parent
     }
 
@@ -101,7 +101,7 @@ struct DebugEditorView: View {
       }.padding(.trailing, 5)
       
       HStack {
-        EditorView(text: $input)
+        FileEditor(text: $input)
       }
       
       HStack(spacing: 5) {
